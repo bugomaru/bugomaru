@@ -49,7 +49,7 @@ proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - hheheh
+      - edukasieksel
       - DIRECT
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
