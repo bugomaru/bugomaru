@@ -33,7 +33,7 @@ dns:
     - 112.215.203.254
 proxies:
   - name: ngiseng1
-    server: 172.67.73.39
+    server: 104.17.3.81
     port: 443
     type: trojan
     password: cffc48c0-0b8f-11ee-b7b1-1239d0255272
