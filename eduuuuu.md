@@ -32,7 +32,7 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: ngiseng
+  - name: ngiseng1
     server: 172.67.73.39
     port: 443
     type: trojan
@@ -49,7 +49,7 @@ proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - ngiseng
+      - ngiseng1
       - DIRECT
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
