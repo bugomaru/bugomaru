@@ -32,24 +32,21 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: ngiseng1
+  - name: natanvpnn
     server: 104.17.3.81
-    port: 443
-    type: trojan
-    password: cffc48c0-0b8f-11ee-b7b1-1239d0255272
+    port: 80
+    type: vmess
+    uuid: c09751b6-b6c0-4a52-9b22-bc30625a7aa7
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: sg-2.test3.net
+    servername: dox2.natanvpn.xyz
     network: ws
     ws-opts:
-      path: /howdy
+      path: /vmess
       headers:
-        Host: sg-2.test3.net
+        Host: dox2.natanvpn.xyz
     udp: true
-proxy-groups:
-  - name: FASTSSH-SSHKIT-HOWDY
-    type: select
-    proxies:
-      - ngiseng1
-      - DIRECT
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
